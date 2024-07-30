@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = z:\2024\Programación\TP5 - Sala de Escape\SalaDeEscape
 build_property._RazorSourceGeneratorDebug = 
 
+[z:/2024/Programación/TP5 - Sala de Escape/SalaDeEscape/Views/Home/Habitacion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYWJpdGFjaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [z:/2024/Programación/TP5 - Sala de Escape/SalaDeEscape/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[z:/2024/Programación/TP5 - Sala de Escape/SalaDeEscape/Views/Home/Tutorial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUdXRvcmlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [z:/2024/Programación/TP5 - Sala de Escape/SalaDeEscape/Views/Shared/_Layout.cshtml]

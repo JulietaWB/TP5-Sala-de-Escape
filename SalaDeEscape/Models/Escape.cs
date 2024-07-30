@@ -11,7 +11,7 @@ public static class Escape
 
         incognitasSalas[0] = "XIX";
         incognitasSalas[1] = "Geronima Garrizzo";
-        incognitasSalas[2] = "Banco de La Nación Argentina";
+        incognitasSalas[2] = "banco de la nación argentina";
         incognitasSalas[3] = "5267689";
         incognitasSalas[4] = "ganastE";
 

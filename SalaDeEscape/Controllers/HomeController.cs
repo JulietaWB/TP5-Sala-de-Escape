@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
+
         return View();
     }
 
@@ -27,50 +29,78 @@ public class HomeController : Controller
     {
         int sala=Escape.GetEstadoJuego();
 
+
         switch (sala) 
         {
-            case 1: return habitacion1();
+            case 1: 
+                ViewBag.Titulo = "Habitacion 1";
+                ViewBag.Desc="";
+                ViewBag.Img="";
+                break;
+                
+            case 2: 
+                ViewBag.Titulo = "Habitacion 2";
+                ViewBag.Desc="";
+                ViewBag.Img="";
+                break;
+                
+            case 3:
+                ViewBag.Titulo = "Habitacion 3";
+                ViewBag.Desc="";
+                ViewBag.Img=""; 
             break;
                 
-            case 2: return habitacion2();
+            case 4:
+                ViewBag.Titulo = "Habitacion 4";
+                ViewBag.Desc="";
+                ViewBag.Img="";
             break;
                 
-            case 3: return habitacion3();
-            break;
-                
-            case 4: return habitacion4();
-            break;
-                
-            case 5: return habitacion5();
+            case 5:
+                ViewBag.Titulo = "Habitacion 5";
+                ViewBag.Desc="";
+                ViewBag.Img="";
             break;
                 
             default: 
             break;
         }
-        return View();
+        return View("Habitacion");
     }
 
     public IActionResult Habitacion (int sala, string clave)
     {
-        if (sala==Escape.GetEstadoJuego())
+        if (sala==Escape.GetEstadoJuego()) //si está bien la sala
         {
             if (Escape.ResolverSala(sala, clave)==true) //si ganó
             {
                 switch (Escape.GetEstadoJuego()+1) 
                 {
-                    case 2: return habitacion2();
+                    case 2: 
+                        ViewBag.Titulo = "Habitacion 2";
+                        ViewBag.Desc="";
+                        ViewBag.Img="";
+                        break;
+                        
+                    case 3:
+                        ViewBag.Titulo = "Habitacion 3";
+                        ViewBag.Desc="";
+                        ViewBag.Img=""; 
                     break;
-                    
-                    case 3: return habitacion3();
+                        
+                    case 4:
+                        ViewBag.Titulo = "Habitacion 4";
+                        ViewBag.Desc="";
+                        ViewBag.Img="";
                     break;
-                    
-                    case 4: return habitacion4();
-                    break;
-                    
-                    case 5: return habitacion5();
+                        
+                    case 5:
+                        ViewBag.Titulo = "Habitacion 5";
+                        ViewBag.Desc="";
+                        ViewBag.Img="";
                     break;
 
-                    case 6: return Victoria();
+                    case 6: return View("Victoria");
                     break;
                     
                     default: 
@@ -81,19 +111,31 @@ public class HomeController : Controller
             {
                 switch (Escape.GetEstadoJuego()) 
                 {
-                    case 2: return habitacion2();
+                    case 2: 
+                        ViewBag.Titulo = "Habitacion 2";
+                        ViewBag.Desc="";
+                        ViewBag.Img="";
+                        break;
+                        
+                    case 3:
+                        ViewBag.Titulo = "Habitacion 3";
+                        ViewBag.Desc="";
+                        ViewBag.Img=""; 
                     break;
-                    
-                    case 3: return habitacion3();
+                        
+                    case 4:
+                        ViewBag.Titulo = "Habitacion 4";
+                        ViewBag.Desc="";
+                        ViewBag.Img="";
                     break;
-                    
-                    case 4: return habitacion4();
-                    break;
-                    
-                    case 5: return habitacion5();
+                        
+                    case 5:
+                        ViewBag.Titulo = "Habitacion 5";
+                        ViewBag.Desc="";
+                        ViewBag.Img="";
                     break;
 
-                    case 6: return Victoria();
+                    case 6: return View("Victoria");
                     break;
                     
                     default: 
@@ -105,20 +147,35 @@ public class HomeController : Controller
         {
             switch (Escape.GetEstadoJuego()) 
             {
-                case 1: return habitacion1();
+               case 1: 
+                ViewBag.Titulo = "Habitacion 1";
+                ViewBag.Desc="";
+                ViewBag.Img="";
                 break;
                 
-                case 2: return habitacion2();
+            case 2: 
+                ViewBag.Titulo = "Habitacion 2";
+                ViewBag.Desc="";
+                ViewBag.Img="";
                 break;
                 
-                case 3: return habitacion3();
-                break;
+            case 3:
+                ViewBag.Titulo = "Habitacion 3";
+                ViewBag.Desc="";
+                ViewBag.Img=""; 
+            break;
                 
-                case 4: return habitacion4();
-                break;
+            case 4:
+                ViewBag.Titulo = "Habitacion 4";
+                ViewBag.Desc="";
+                ViewBag.Img="";
+            break;
                 
-                case 5: return habitacion5();
-                break;
+            case 5:
+                ViewBag.Titulo = "Habitacion 5";
+                ViewBag.Desc="";
+                ViewBag.Img="";
+            break;
                 
                 default: 
                 break;
@@ -126,8 +183,7 @@ public class HomeController : Controller
         }
 
 
-        return View(); 
-        
+        return View("Habitacion");     
     }
 
 }
