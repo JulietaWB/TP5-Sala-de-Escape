@@ -34,31 +34,31 @@ public class HomeController : Controller
         {
             case 1: 
                 ViewBag.Titulo = "Habitacion 1";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="Ay, ¿dónde dejé mi libreta?";
+                ViewBag.Img="\wwwroot\images\habitacion1.png";
                 break;
                 
             case 2: 
                 ViewBag.Titulo = "Habitacion 2";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="No puedo recordar mi nombre…";
+                ViewBag.Img="\wwwroot\images\habitacion2.png";
                 break;
                 
             case 3:
                 ViewBag.Titulo = "Habitacion 3";
-                ViewBag.Desc="";
-                ViewBag.Img=""; 
+                ViewBag.Desc=" ¿Cuál era el nombre de mi banco…?";
+                ViewBag.Img="\wwwroot\images\habitacion3.png"; 
             break;
                 
             case 4:
                 ViewBag.Titulo = "Habitacion 4";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="No me acuerdo cuál de estos es mi documento.";
+                ViewBag.Img="\wwwroot\images\habitacion4.png";
             break;
                 
             case 5:
-                ViewBag.Titulo = "Habitacion 5";
-                ViewBag.Desc="";
+                ViewBag.Titulo = "\wwwroot\images\habitacion5.png";
+                ViewBag.Desc="Este diario… mi clave del banco estaba acá, en algún lado.";
                 ViewBag.Img="";
             break;
                 
@@ -78,25 +78,25 @@ public class HomeController : Controller
                 {
                     case 2: 
                         ViewBag.Titulo = "Habitacion 2";
-                        ViewBag.Desc="";
-                        ViewBag.Img="";
+                        ViewBag.Desc="No puedo recordar mi nombre…";
+                        ViewBag.Img="\wwwroot\images\habitacion2.png";
                         break;
                         
                     case 3:
                         ViewBag.Titulo = "Habitacion 3";
-                        ViewBag.Desc="";
-                        ViewBag.Img=""; 
+                        ViewBag.Desc="¿Cuál era el nombre de mi banco…?";
+                        ViewBag.Img="\wwwroot\images\habitacion3.png"; 
                     break;
                         
                     case 4:
                         ViewBag.Titulo = "Habitacion 4";
-                        ViewBag.Desc="";
-                        ViewBag.Img="";
+                        ViewBag.Desc="No me acuerdo cuál de estos es mi documento.";
+                        ViewBag.Img="\wwwroot\images\habitacion4.png";
                     break;
                         
                     case 5:
-                        ViewBag.Titulo = "Habitacion 5";
-                        ViewBag.Desc="";
+                        ViewBag.Titulo = "\wwwroot\images\habitacion5.png";
+                        ViewBag.Desc="Este diario… mi clave del banco estaba acá, en algún lado.";
                         ViewBag.Img="";
                     break;
 
@@ -113,25 +113,25 @@ public class HomeController : Controller
                 {
                     case 2: 
                         ViewBag.Titulo = "Habitacion 2";
-                        ViewBag.Desc="";
-                        ViewBag.Img="";
+                        ViewBag.Desc="No puedo recordar mi nombre…";
+                        ViewBag.Img="\wwwroot\images\habitacion2.png";
                         break;
                         
                     case 3:
                         ViewBag.Titulo = "Habitacion 3";
-                        ViewBag.Desc="";
-                        ViewBag.Img=""; 
+                        ViewBag.Desc="¿Cuál era el nombre de mi banco…?";
+                        ViewBag.Img="\wwwroot\images\habitacion3.png"; 
                     break;
                         
                     case 4:
                         ViewBag.Titulo = "Habitacion 4";
-                        ViewBag.Desc="";
-                        ViewBag.Img="";
+                        ViewBag.Desc="No me acuerdo cuál de estos es mi documento.";
+                        ViewBag.Img="\wwwroot\images\habitacion4.png";
                     break;
                         
                     case 5:
-                        ViewBag.Titulo = "Habitacion 5";
-                        ViewBag.Desc="";
+                        ViewBag.Titulo = "\wwwroot\images\habitacion5.png";
+                        ViewBag.Desc="Este diario… mi clave del banco estaba acá, en algún lado.";
                         ViewBag.Img="";
                     break;
 
@@ -149,32 +149,32 @@ public class HomeController : Controller
             {
                case 1: 
                 ViewBag.Titulo = "Habitacion 1";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="Ay, ¿dónde dejé mi libreta?";
+                ViewBag.Img="\wwwroot\images\habitacion1.png";
                 break;
                 
             case 2: 
                 ViewBag.Titulo = "Habitacion 2";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="No puedo recordar mi nombre…";
+                ViewBag.Img="\wwwroot\images\habitacion2.png";
                 break;
                 
             case 3:
                 ViewBag.Titulo = "Habitacion 3";
-                ViewBag.Desc="";
-                ViewBag.Img=""; 
+                ViewBag.Desc="¿Cuál era el nombre de mi banco…?";
+                ViewBag.Img="\wwwroot\images\habitacion3.png"; 
             break;
                 
             case 4:
                 ViewBag.Titulo = "Habitacion 4";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="No me acuerdo cuál de estos es mi documento.";
+                ViewBag.Img="\wwwroot\images\habitacion4.png";
             break;
                 
             case 5:
                 ViewBag.Titulo = "Habitacion 5";
-                ViewBag.Desc="";
-                ViewBag.Img="";
+                ViewBag.Desc="Este diario… mi clave del banco estaba acá, en algún lado.";
+                ViewBag.Img="\wwwroot\images\habitacion5.png"; 
             break;
                 
                 default: 
