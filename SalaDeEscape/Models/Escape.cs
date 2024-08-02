@@ -5,13 +5,13 @@ public static class Escape
 
 
     //Métodos
-    private static void InicializarJuego()
+    public static void InicializarJuego()
     {
         incognitasSalas = new string[5];
 
         incognitasSalas[0] = "XIX";
         incognitasSalas[1] = "Geronima Garrizzo";
-        incognitasSalas[2] = "banco de la nación argentina";
+        incognitasSalas[2] = "Banco de la Nación Argentina";
         incognitasSalas[3] = "5267689";
         incognitasSalas[4] = "ganastE";
 
@@ -31,7 +31,7 @@ public static class Escape
         
         if (Sala==estadoJuego)
         {
-            if (Incognita==incognitasSalas[Sala])
+            if (Incognita==incognitasSalas[Sala-1])
             {
                 estadoJuego++;
                 return true;

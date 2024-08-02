@@ -2,9 +2,35 @@
     ViewData["Title"] = "Habitacion";
 }
 
-<h1>@ViewBag.Titulo </h1>
 
-<p>@ViewBag.Titulo</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
 
-<img src="@Viewbag.Img" alt="Bicileta fija" />
+  <body>
+    <h1>@ViewBag.Titulo </h1>
 
+    <p>@ViewBag.Desc</p>
+
+    <img class="imgHab" src= @ViewBag.Img />
+    
+    <form method="post" action='@Url.Action("Habitacion")'>
+      <input type="hidden" name="sala" value=@ViewBag.Sala>
+        <input type="text" name="clave" placeholder="Tu respuesta"/>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Validar respuesta</button>
+        </div>
+    </form>
+
+
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-content= @ViewBag.Pista1 >Click to toggle popover</button>
+<button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-content=@ViewBag.Pista2>Click to toggle popover</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
